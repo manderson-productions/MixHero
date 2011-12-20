@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A04E18C149E9A5100C2DCC7 /* hiphopwinbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A04E188149E9A5100C2DCC7 /* hiphopwinbmp.png */; };
+		5A04E18D149E9A5100C2DCC7 /* jazzwinbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A04E189149E9A5100C2DCC7 /* jazzwinbmp.png */; };
+		5A04E18E149E9A5100C2DCC7 /* reggaewinbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A04E18A149E9A5100C2DCC7 /* reggaewinbmp.png */; };
+		5A04E18F149E9A5100C2DCC7 /* rockwinbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A04E18B149E9A5100C2DCC7 /* rockwinbmp.png */; };
+		5A04E192149EA72400C2DCC7 /* uriwinbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A04E191149EA72400C2DCC7 /* uriwinbmp.png */; };
+		5A04E194149EAF2800C2DCC7 /* logobmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A04E193149EAF2800C2DCC7 /* logobmp.png */; };
+		5A108229149FA21100859F72 /* jazzbass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A108225149FA21000859F72 /* jazzbass.wav */; };
+		5A10822A149FA21100859F72 /* jazzdrums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A108226149FA21000859F72 /* jazzdrums.wav */; };
+		5A10822B149FA21100859F72 /* jazzflute.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A108227149FA21100859F72 /* jazzflute.wav */; };
+		5A10822C149FA21100859F72 /* jazzpiano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5A108228149FA21100859F72 /* jazzpiano.wav */; };
+		5A4A0573149E736D00737A0C /* eviction2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0572149E736D00737A0C /* eviction2.png */; };
+		5A4A0575149E790300737A0C /* urihomeless.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0574149E790300737A0C /* urihomeless.png */; };
+		5A4A0577149E7D6300737A0C /* uri2new.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0576149E7D6300737A0C /* uri2new.png */; };
+		5A4A057A149E7EE500737A0C /* quitbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0578149E7EE500737A0C /* quitbutton.png */; };
+		5A4A057B149E7EE500737A0C /* tryagainbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0579149E7EE500737A0C /* tryagainbutton.png */; };
+		5A671144149087AA0034CA80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671143149087AA0034CA80 /* Cocoa.framework */; };
+		5A67116B149089E50034CA80 /* Allegro-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671161149089E50034CA80 /* Allegro-5.0.framework */; };
+		5A67116C149089E50034CA80 /* AllegroAcodec-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671162149089E50034CA80 /* AllegroAcodec-5.0.framework */; };
+		5A67116D149089E50034CA80 /* AllegroAudio-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671163149089E50034CA80 /* AllegroAudio-5.0.framework */; };
+		5A67116E149089E50034CA80 /* AllegroColor-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671164149089E50034CA80 /* AllegroColor-5.0.framework */; };
+		5A67116F149089E50034CA80 /* AllegroDialog-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671165149089E50034CA80 /* AllegroDialog-5.0.framework */; };
+		5A671170149089E50034CA80 /* AllegroFont-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671166149089E50034CA80 /* AllegroFont-5.0.framework */; };
+		5A671171149089E50034CA80 /* AllegroImage-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671167149089E50034CA80 /* AllegroImage-5.0.framework */; };
+		5A671172149089E50034CA80 /* AllegroMemfile-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671168149089E50034CA80 /* AllegroMemfile-5.0.framework */; };
+		5A671173149089E50034CA80 /* AllegroPrimitives-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A671169149089E50034CA80 /* AllegroPrimitives-5.0.framework */; };
+		5A671174149089E50034CA80 /* AllegroTTF-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A67116A149089E50034CA80 /* AllegroTTF-5.0.framework */; };
+		5A67117614908A290034CA80 /* AllegroMain-5.0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A67117514908A290034CA80 /* AllegroMain-5.0.framework */; };
+		5A67117714908A380034CA80 /* AllegroMain-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A67117514908A290034CA80 /* AllegroMain-5.0.framework */; };
+		5A67117814908A380034CA80 /* Allegro-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671161149089E50034CA80 /* Allegro-5.0.framework */; };
+		5A67117914908A380034CA80 /* AllegroAcodec-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671162149089E50034CA80 /* AllegroAcodec-5.0.framework */; };
+		5A67117A14908A380034CA80 /* AllegroAudio-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671163149089E50034CA80 /* AllegroAudio-5.0.framework */; };
+		5A67117B14908A380034CA80 /* AllegroColor-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671164149089E50034CA80 /* AllegroColor-5.0.framework */; };
+		5A67117C14908A380034CA80 /* AllegroDialog-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671165149089E50034CA80 /* AllegroDialog-5.0.framework */; };
+		5A67117D14908A380034CA80 /* AllegroFont-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671166149089E50034CA80 /* AllegroFont-5.0.framework */; };
+		5A67117E14908A380034CA80 /* AllegroImage-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671167149089E50034CA80 /* AllegroImage-5.0.framework */; };
+		5A67117F14908A380034CA80 /* AllegroMemfile-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671168149089E50034CA80 /* AllegroMemfile-5.0.framework */; };
+		5A67118014908A380034CA80 /* AllegroPrimitives-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A671169149089E50034CA80 /* AllegroPrimitives-5.0.framework */; };
+		5A67118114908A380034CA80 /* AllegroTTF-5.0.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A67116A149089E50034CA80 /* AllegroTTF-5.0.framework */; };
+		5A6F8F21149DA3AC006AEB6D /* uri3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6F8F20149DA3AC006AEB6D /* uri3.png */; };
+		5A85715B14910DBE003A0D71 /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A85715A14910DBE003A0D71 /* Arial.ttf */; };
+		5A86E7C2149845CB00C4E99E /* mixerone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E7C1149845CB00C4E99E /* mixerone.png */; };
+		5A86E7C814985B5D00C4E99E /* buttonfour.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E7C414985B5D00C4E99E /* buttonfour.png */; };
+		5A86E7CA14985B5D00C4E99E /* buttonthree.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E7C614985B5D00C4E99E /* buttonthree.png */; };
+		5A86E7CB14985B5D00C4E99E /* buttontwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E7C714985B5D00C4E99E /* buttontwo.png */; };
+		5A86E7CF149866BD00C4E99E /* buttonone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A86E7CE149866BD00C4E99E /* buttonone.png */; };
+		5AADF50F149AF66C009DD91C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AB1ACB814969A7900B9D699 /* main.c */; };
+		5AC1AF371496C5BE00043BBA /* mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC1AF311496A4F000043BBA /* mixer.png */; };
+		5AC1AF381496C5C200043BBA /* fader.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AB1ACBD14969AD900B9D699 /* fader.png */; };
+		5ADA3BB3149A9CFF0013F722 /* uriMENU.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA3BB2149A9CFF0013F722 /* uriMENU.png */; };
+		5ADA3BB7149AA9240013F722 /* Comic Sans MS Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA3BB6149AA9240013F722 /* Comic Sans MS Bold.ttf */; };
+		5ADA3BB9149AAEF20013F722 /* mixbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADA3BB8149AAEF20013F722 /* mixbutton.png */; };
+		5AE305F3149D126D0001FBC0 /* dimebagbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305E4149D126D0001FBC0 /* dimebagbmp.png */; };
+		5AE305F4149D126D0001FBC0 /* dimebaghappybmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305E5149D126D0001FBC0 /* dimebaghappybmp.png */; };
+		5AE305F5149D126D0001FBC0 /* dimebagpissedbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305E6149D126D0001FBC0 /* dimebagpissedbmp.png */; };
+		5AE305F6149D126D0001FBC0 /* kennygonebmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305E7149D126D0001FBC0 /* kennygonebmp.png */; };
+		5AE305F7149D126D0001FBC0 /* kennygtwobmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305E8149D126D0001FBC0 /* kennygtwobmp.png */; };
+		5AE305F8149D126D0001FBC0 /* kingtubbybmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305E9149D126D0001FBC0 /* kingtubbybmp.png */; };
+		5AE305F9149D126D0001FBC0 /* kingtubbyhappybmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305EA149D126D0001FBC0 /* kingtubbyhappybmp.png */; };
+		5AE305FA149D126D0001FBC0 /* kingtubbypissedbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305EB149D126D0001FBC0 /* kingtubbypissedbmp.png */; };
+		5AE305FB149D126D0001FBC0 /* moneybmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305EC149D126D0001FBC0 /* moneybmp.png */; };
+		5AE305FC149D126D0001FBC0 /* pdiddybmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305ED149D126D0001FBC0 /* pdiddybmp.png */; };
+		5AE305FD149D126D0001FBC0 /* pdiddyhappybmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305EE149D126D0001FBC0 /* pdiddyhappybmp.png */; };
+		5AE305FE149D126D0001FBC0 /* pdiddypissedbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305EF149D126D0001FBC0 /* pdiddypissedbmp.png */; };
+		5AE305FF149D126D0001FBC0 /* uribest.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305F0149D126D0001FBC0 /* uribest.png */; };
+		5AE30600149D126D0001FBC0 /* urimedium.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305F1149D126D0001FBC0 /* urimedium.png */; };
+		5AE30601149D126D0001FBC0 /* uriworst.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE305F2149D126D0001FBC0 /* uriworst.png */; };
+		5AE30604149D1A280001FBC0 /* kennygamebmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30603149D1A280001FBC0 /* kennygamebmp.png */; };
+		5AE30606149D2D860001FBC0 /* mixertemp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30605149D2D860001FBC0 /* mixertemp.png */; };
+		5AE30608149D306A0001FBC0 /* mixerborder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30607149D306A0001FBC0 /* mixerborder.png */; };
+		5AE3060A149D3ECC0001FBC0 /* EuphemiaCASRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30609149D3ECC0001FBC0 /* EuphemiaCASRegular.ttf */; };
+		5AE3060C149D45B50001FBC0 /* uri1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE3060B149D45B40001FBC0 /* uri1.png */; };
+		5AE3061A149D64740001FBC0 /* hiphopbad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE3060E149D64740001FBC0 /* hiphopbad.png */; };
+		5AE3061B149D64740001FBC0 /* hiphopgood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE3060F149D64740001FBC0 /* hiphopgood.png */; };
+		5AE3061C149D64740001FBC0 /* hiphopintro.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30610149D64740001FBC0 /* hiphopintro.png */; };
+		5AE3061D149D64740001FBC0 /* jazzbad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30611149D64740001FBC0 /* jazzbad.png */; };
+		5AE3061E149D64740001FBC0 /* jazzgood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30612149D64740001FBC0 /* jazzgood.png */; };
+		5AE3061F149D64740001FBC0 /* jazzintro.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30613149D64740001FBC0 /* jazzintro.png */; };
+		5AE30620149D64740001FBC0 /* reggaebad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30614149D64740001FBC0 /* reggaebad.png */; };
+		5AE30621149D64740001FBC0 /* reggaegood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30615149D64740001FBC0 /* reggaegood.png */; };
+		5AE30622149D64740001FBC0 /* reggaeintro.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30616149D64740001FBC0 /* reggaeintro.png */; };
+		5AE30623149D64740001FBC0 /* rockbad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30617149D64740001FBC0 /* rockbad.png */; };
+		5AE30624149D64740001FBC0 /* rockgood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30618149D64740001FBC0 /* rockgood.png */; };
+		5AE30625149D64740001FBC0 /* rockintro.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30619149D64740001FBC0 /* rockintro.png */; };
+		5AE30627149D648C0001FBC0 /* urione.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30626149D648C0001FBC0 /* urione.png */; };
+		5AE30629149D8A8D0001FBC0 /* mixernewbmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE30628149D8A8D0001FBC0 /* mixernewbmp.png */; };
+		889BD7F6149FD55C00A84D17 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 889BD7F5149FD55C00A84D17 /* icon.icns */; };
+		88E105C1149B06D800181644 /* hiphop1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105B1149B06D800181644 /* hiphop1.wav */; };
+		88E105C2149B06D800181644 /* hiphop2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105B2149B06D800181644 /* hiphop2.wav */; };
+		88E105C3149B06D800181644 /* hiphop3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105B3149B06D800181644 /* hiphop3.wav */; };
+		88E105C4149B06D800181644 /* hiphop4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105B4149B06D800181644 /* hiphop4.wav */; };
+		88E105C9149B06D800181644 /* reggae1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105B9149B06D800181644 /* reggae1.wav */; };
+		88E105CA149B06D800181644 /* reggae2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105BA149B06D800181644 /* reggae2.wav */; };
+		88E105CB149B06D800181644 /* reggae3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105BB149B06D800181644 /* reggae3.wav */; };
+		88E105CC149B06D800181644 /* reggae4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105BC149B06D800181644 /* reggae4.wav */; };
+		88E105CD149B06D800181644 /* rock1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105BD149B06D800181644 /* rock1.wav */; };
+		88E105CE149B06D800181644 /* rock2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105BE149B06D800181644 /* rock2.wav */; };
+		88E105CF149B06D800181644 /* rock3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105BF149B06D800181644 /* rock3.wav */; };
+		88E105D0149B06D800181644 /* rock4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 88E105C0149B06D800181644 /* rock4.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A671160149089650034CA80 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A67117714908A380034CA80 /* AllegroMain-5.0.framework in CopyFiles */,
+				5A67117814908A380034CA80 /* Allegro-5.0.framework in CopyFiles */,
+				5A67117914908A380034CA80 /* AllegroAcodec-5.0.framework in CopyFiles */,
+				5A67117A14908A380034CA80 /* AllegroAudio-5.0.framework in CopyFiles */,
+				5A67117B14908A380034CA80 /* AllegroColor-5.0.framework in CopyFiles */,
+				5A67117C14908A380034CA80 /* AllegroDialog-5.0.framework in CopyFiles */,
+				5A67117D14908A380034CA80 /* AllegroFont-5.0.framework in CopyFiles */,
+				5A67117E14908A380034CA80 /* AllegroImage-5.0.framework in CopyFiles */,
+				5A67117F14908A380034CA80 /* AllegroMemfile-5.0.framework in CopyFiles */,
+				5A67118014908A380034CA80 /* AllegroPrimitives-5.0.framework in CopyFiles */,
+				5A67118114908A380034CA80 /* AllegroTTF-5.0.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A04E188149E9A5100C2DCC7 /* hiphopwinbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiphopwinbmp.png; sourceTree = "<group>"; };
+		5A04E189149E9A5100C2DCC7 /* jazzwinbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jazzwinbmp.png; sourceTree = "<group>"; };
+		5A04E18A149E9A5100C2DCC7 /* reggaewinbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reggaewinbmp.png; sourceTree = "<group>"; };
+		5A04E18B149E9A5100C2DCC7 /* rockwinbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rockwinbmp.png; sourceTree = "<group>"; };
+		5A04E191149EA72400C2DCC7 /* uriwinbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uriwinbmp.png; sourceTree = "<group>"; };
+		5A04E193149EAF2800C2DCC7 /* logobmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logobmp.png; sourceTree = "<group>"; };
+		5A108225149FA21000859F72 /* jazzbass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jazzbass.wav; sourceTree = "<group>"; };
+		5A108226149FA21000859F72 /* jazzdrums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jazzdrums.wav; sourceTree = "<group>"; };
+		5A108227149FA21100859F72 /* jazzflute.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jazzflute.wav; sourceTree = "<group>"; };
+		5A108228149FA21100859F72 /* jazzpiano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jazzpiano.wav; sourceTree = "<group>"; };
+		5A4A0572149E736D00737A0C /* eviction2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eviction2.png; sourceTree = "<group>"; };
+		5A4A0574149E790300737A0C /* urihomeless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urihomeless.png; sourceTree = "<group>"; };
+		5A4A0576149E7D6300737A0C /* uri2new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uri2new.png; sourceTree = "<group>"; };
+		5A4A0578149E7EE500737A0C /* quitbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quitbutton.png; sourceTree = "<group>"; };
+		5A4A0579149E7EE500737A0C /* tryagainbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tryagainbutton.png; sourceTree = "<group>"; };
+		5A67113F149087AA0034CA80 /* Mix Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mix Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A671143149087AA0034CA80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5A671146149087AA0034CA80 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5A671147149087AA0034CA80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5A671148149087AA0034CA80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A671161149089E50034CA80 /* Allegro-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Allegro-5.0.framework"; path = "Library/Frameworks/Allegro-5.0.framework"; sourceTree = SDKROOT; };
+		5A671162149089E50034CA80 /* AllegroAcodec-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroAcodec-5.0.framework"; path = "Library/Frameworks/AllegroAcodec-5.0.framework"; sourceTree = SDKROOT; };
+		5A671163149089E50034CA80 /* AllegroAudio-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroAudio-5.0.framework"; path = "Library/Frameworks/AllegroAudio-5.0.framework"; sourceTree = SDKROOT; };
+		5A671164149089E50034CA80 /* AllegroColor-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroColor-5.0.framework"; path = "Library/Frameworks/AllegroColor-5.0.framework"; sourceTree = SDKROOT; };
+		5A671165149089E50034CA80 /* AllegroDialog-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroDialog-5.0.framework"; path = "Library/Frameworks/AllegroDialog-5.0.framework"; sourceTree = SDKROOT; };
+		5A671166149089E50034CA80 /* AllegroFont-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroFont-5.0.framework"; path = "Library/Frameworks/AllegroFont-5.0.framework"; sourceTree = SDKROOT; };
+		5A671167149089E50034CA80 /* AllegroImage-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroImage-5.0.framework"; path = "Library/Frameworks/AllegroImage-5.0.framework"; sourceTree = SDKROOT; };
+		5A671168149089E50034CA80 /* AllegroMemfile-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroMemfile-5.0.framework"; path = "Library/Frameworks/AllegroMemfile-5.0.framework"; sourceTree = SDKROOT; };
+		5A671169149089E50034CA80 /* AllegroPrimitives-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroPrimitives-5.0.framework"; path = "Library/Frameworks/AllegroPrimitives-5.0.framework"; sourceTree = SDKROOT; };
+		5A67116A149089E50034CA80 /* AllegroTTF-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroTTF-5.0.framework"; path = "Library/Frameworks/AllegroTTF-5.0.framework"; sourceTree = SDKROOT; };
+		5A67117514908A290034CA80 /* AllegroMain-5.0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AllegroMain-5.0.framework"; path = "/Library/Frameworks/AllegroMain-5.0.framework"; sourceTree = "<absolute>"; };
+		5A6F8F20149DA3AC006AEB6D /* uri3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uri3.png; sourceTree = "<group>"; };
+		5A85715A14910DBE003A0D71 /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Arial.ttf; path = /Library/Fonts/Arial.ttf; sourceTree = "<absolute>"; };
+		5A86E7C1149845CB00C4E99E /* mixerone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixerone.png; sourceTree = "<group>"; };
+		5A86E7C414985B5D00C4E99E /* buttonfour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonfour.png; sourceTree = "<group>"; };
+		5A86E7C614985B5D00C4E99E /* buttonthree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonthree.png; sourceTree = "<group>"; };
+		5A86E7C714985B5D00C4E99E /* buttontwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttontwo.png; sourceTree = "<group>"; };
+		5A86E7CE149866BD00C4E99E /* buttonone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonone.png; path = ../buttonone.png; sourceTree = "<group>"; };
+		5AB1ACB814969A7900B9D699 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5AB1ACB914969A7900B9D699 /* mainStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainStuff.h; sourceTree = "<group>"; };
+		5AB1ACBD14969AD900B9D699 /* fader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fader.png; sourceTree = "<group>"; };
+		5AC1AF311496A4F000043BBA /* mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mixer.png; path = ../mixer.png; sourceTree = "<group>"; };
+		5ADA3BB2149A9CFF0013F722 /* uriMENU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uriMENU.png; sourceTree = "<group>"; };
+		5ADA3BB6149AA9240013F722 /* Comic Sans MS Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS Bold.ttf"; sourceTree = "<group>"; };
+		5ADA3BB8149AAEF20013F722 /* mixbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixbutton.png; sourceTree = "<group>"; };
+		5AE305E4149D126D0001FBC0 /* dimebagbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimebagbmp.png; sourceTree = "<group>"; };
+		5AE305E5149D126D0001FBC0 /* dimebaghappybmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimebaghappybmp.png; sourceTree = "<group>"; };
+		5AE305E6149D126D0001FBC0 /* dimebagpissedbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimebagpissedbmp.png; sourceTree = "<group>"; };
+		5AE305E7149D126D0001FBC0 /* kennygonebmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kennygonebmp.png; sourceTree = "<group>"; };
+		5AE305E8149D126D0001FBC0 /* kennygtwobmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kennygtwobmp.png; sourceTree = "<group>"; };
+		5AE305E9149D126D0001FBC0 /* kingtubbybmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingtubbybmp.png; sourceTree = "<group>"; };
+		5AE305EA149D126D0001FBC0 /* kingtubbyhappybmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingtubbyhappybmp.png; sourceTree = "<group>"; };
+		5AE305EB149D126D0001FBC0 /* kingtubbypissedbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingtubbypissedbmp.png; sourceTree = "<group>"; };
+		5AE305EC149D126D0001FBC0 /* moneybmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moneybmp.png; sourceTree = "<group>"; };
+		5AE305ED149D126D0001FBC0 /* pdiddybmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdiddybmp.png; sourceTree = "<group>"; };
+		5AE305EE149D126D0001FBC0 /* pdiddyhappybmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdiddyhappybmp.png; sourceTree = "<group>"; };
+		5AE305EF149D126D0001FBC0 /* pdiddypissedbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pdiddypissedbmp.png; sourceTree = "<group>"; };
+		5AE305F0149D126D0001FBC0 /* uribest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uribest.png; sourceTree = "<group>"; };
+		5AE305F1149D126D0001FBC0 /* urimedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urimedium.png; sourceTree = "<group>"; };
+		5AE305F2149D126D0001FBC0 /* uriworst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uriworst.png; sourceTree = "<group>"; };
+		5AE30603149D1A280001FBC0 /* kennygamebmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kennygamebmp.png; sourceTree = "<group>"; };
+		5AE30605149D2D860001FBC0 /* mixertemp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixertemp.png; sourceTree = "<group>"; };
+		5AE30607149D306A0001FBC0 /* mixerborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixerborder.png; sourceTree = "<group>"; };
+		5AE30609149D3ECC0001FBC0 /* EuphemiaCASRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EuphemiaCASRegular.ttf; sourceTree = "<group>"; };
+		5AE3060B149D45B40001FBC0 /* uri1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uri1.png; sourceTree = "<group>"; };
+		5AE3060E149D64740001FBC0 /* hiphopbad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiphopbad.png; sourceTree = "<group>"; };
+		5AE3060F149D64740001FBC0 /* hiphopgood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiphopgood.png; sourceTree = "<group>"; };
+		5AE30610149D64740001FBC0 /* hiphopintro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiphopintro.png; sourceTree = "<group>"; };
+		5AE30611149D64740001FBC0 /* jazzbad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jazzbad.png; sourceTree = "<group>"; };
+		5AE30612149D64740001FBC0 /* jazzgood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jazzgood.png; sourceTree = "<group>"; };
+		5AE30613149D64740001FBC0 /* jazzintro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jazzintro.png; sourceTree = "<group>"; };
+		5AE30614149D64740001FBC0 /* reggaebad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reggaebad.png; sourceTree = "<group>"; };
+		5AE30615149D64740001FBC0 /* reggaegood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reggaegood.png; sourceTree = "<group>"; };
+		5AE30616149D64740001FBC0 /* reggaeintro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reggaeintro.png; sourceTree = "<group>"; };
+		5AE30617149D64740001FBC0 /* rockbad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rockbad.png; sourceTree = "<group>"; };
+		5AE30618149D64740001FBC0 /* rockgood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rockgood.png; sourceTree = "<group>"; };
+		5AE30619149D64740001FBC0 /* rockintro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rockintro.png; sourceTree = "<group>"; };
+		5AE30626149D648C0001FBC0 /* urione.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = urione.png; sourceTree = "<group>"; };
+		5AE30628149D8A8D0001FBC0 /* mixernewbmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixernewbmp.png; sourceTree = "<group>"; };
+		889BD7F5149FD55C00A84D17 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		88E105B1149B06D800181644 /* hiphop1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop1.wav; sourceTree = "<group>"; };
+		88E105B2149B06D800181644 /* hiphop2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop2.wav; sourceTree = "<group>"; };
+		88E105B3149B06D800181644 /* hiphop3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop3.wav; sourceTree = "<group>"; };
+		88E105B4149B06D800181644 /* hiphop4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop4.wav; sourceTree = "<group>"; };
+		88E105B9149B06D800181644 /* reggae1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reggae1.wav; sourceTree = "<group>"; };
+		88E105BA149B06D800181644 /* reggae2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reggae2.wav; sourceTree = "<group>"; };
+		88E105BB149B06D800181644 /* reggae3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reggae3.wav; sourceTree = "<group>"; };
+		88E105BC149B06D800181644 /* reggae4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reggae4.wav; sourceTree = "<group>"; };
+		88E105BD149B06D800181644 /* rock1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock1.wav; sourceTree = "<group>"; };
+		88E105BE149B06D800181644 /* rock2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock2.wav; sourceTree = "<group>"; };
+		88E105BF149B06D800181644 /* rock3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock3.wav; sourceTree = "<group>"; };
+		88E105C0149B06D800181644 /* rock4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rock4.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A67113C149087AA0034CA80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A67117614908A290034CA80 /* AllegroMain-5.0.framework in Frameworks */,
+				5A67116B149089E50034CA80 /* Allegro-5.0.framework in Frameworks */,
+				5A67116C149089E50034CA80 /* AllegroAcodec-5.0.framework in Frameworks */,
+				5A67116D149089E50034CA80 /* AllegroAudio-5.0.framework in Frameworks */,
+				5A67116E149089E50034CA80 /* AllegroColor-5.0.framework in Frameworks */,
+				5A67116F149089E50034CA80 /* AllegroDialog-5.0.framework in Frameworks */,
+				5A671170149089E50034CA80 /* AllegroFont-5.0.framework in Frameworks */,
+				5A671171149089E50034CA80 /* AllegroImage-5.0.framework in Frameworks */,
+				5A671172149089E50034CA80 /* AllegroMemfile-5.0.framework in Frameworks */,
+				5A671173149089E50034CA80 /* AllegroPrimitives-5.0.framework in Frameworks */,
+				5A671174149089E50034CA80 /* AllegroTTF-5.0.framework in Frameworks */,
+				5A671144149087AA0034CA80 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A671134149087AA0034CA80 = {
+			isa = PBXGroup;
+			children = (
+				889BD7F5149FD55C00A84D17 /* icon.icns */,
+				5A671149149087AA0034CA80 /* markDavid_endGame */,
+				5A671142149087AA0034CA80 /* Frameworks */,
+				5A671140149087AA0034CA80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A671140149087AA0034CA80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A67113F149087AA0034CA80 /* Mix Hero.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A671142149087AA0034CA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A67117514908A290034CA80 /* AllegroMain-5.0.framework */,
+				5A671161149089E50034CA80 /* Allegro-5.0.framework */,
+				5A671162149089E50034CA80 /* AllegroAcodec-5.0.framework */,
+				5A671163149089E50034CA80 /* AllegroAudio-5.0.framework */,
+				5A671164149089E50034CA80 /* AllegroColor-5.0.framework */,
+				5A671165149089E50034CA80 /* AllegroDialog-5.0.framework */,
+				5A671166149089E50034CA80 /* AllegroFont-5.0.framework */,
+				5A671167149089E50034CA80 /* AllegroImage-5.0.framework */,
+				5A671168149089E50034CA80 /* AllegroMemfile-5.0.framework */,
+				5A671169149089E50034CA80 /* AllegroPrimitives-5.0.framework */,
+				5A67116A149089E50034CA80 /* AllegroTTF-5.0.framework */,
+				5A671143149087AA0034CA80 /* Cocoa.framework */,
+				5A671145149087AA0034CA80 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A671145149087AA0034CA80 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A671146149087AA0034CA80 /* AppKit.framework */,
+				5A671147149087AA0034CA80 /* CoreData.framework */,
+				5A671148149087AA0034CA80 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5A671149149087AA0034CA80 /* markDavid_endGame */ = {
+			isa = PBXGroup;
+			children = (
+				5AB1ACB814969A7900B9D699 /* main.c */,
+				5AB1ACB914969A7900B9D699 /* mainStuff.h */,
+				5A67114A149087AA0034CA80 /* Supporting Files */,
+			);
+			path = markDavid_endGame;
+			sourceTree = "<group>";
+		};
+		5A67114A149087AA0034CA80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88E105AC149B02A700181644 /* Images */,
+				5ADA3B8D149A7B8D0013F722 /* Audio */,
+				5A857161149158C5003A0D71 /* Test Files */,
+				88E105AE149B030200181644 /* Fonts */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A857161149158C5003A0D71 /* Test Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Test Files";
+			sourceTree = "<group>";
+		};
+		5ADA3B8D149A7B8D0013F722 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				5A108225149FA21000859F72 /* jazzbass.wav */,
+				5A108226149FA21000859F72 /* jazzdrums.wav */,
+				5A108227149FA21100859F72 /* jazzflute.wav */,
+				5A108228149FA21100859F72 /* jazzpiano.wav */,
+				88E105B1149B06D800181644 /* hiphop1.wav */,
+				88E105B2149B06D800181644 /* hiphop2.wav */,
+				88E105B3149B06D800181644 /* hiphop3.wav */,
+				88E105B4149B06D800181644 /* hiphop4.wav */,
+				88E105B9149B06D800181644 /* reggae1.wav */,
+				88E105BA149B06D800181644 /* reggae2.wav */,
+				88E105BB149B06D800181644 /* reggae3.wav */,
+				88E105BC149B06D800181644 /* reggae4.wav */,
+				88E105BD149B06D800181644 /* rock1.wav */,
+				88E105BE149B06D800181644 /* rock2.wav */,
+				88E105BF149B06D800181644 /* rock3.wav */,
+				88E105C0149B06D800181644 /* rock4.wav */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		5AE3060D149D64030001FBC0 /* messages */ = {
+			isa = PBXGroup;
+			children = (
+				5A4A0576149E7D6300737A0C /* uri2new.png */,
+				5A4A0572149E736D00737A0C /* eviction2.png */,
+				5A6F8F20149DA3AC006AEB6D /* uri3.png */,
+				5AE30626149D648C0001FBC0 /* urione.png */,
+				5AE3060E149D64740001FBC0 /* hiphopbad.png */,
+				5AE3060F149D64740001FBC0 /* hiphopgood.png */,
+				5AE30610149D64740001FBC0 /* hiphopintro.png */,
+				5AE30611149D64740001FBC0 /* jazzbad.png */,
+				5AE30612149D64740001FBC0 /* jazzgood.png */,
+				5AE30613149D64740001FBC0 /* jazzintro.png */,
+				5AE30614149D64740001FBC0 /* reggaebad.png */,
+				5AE30615149D64740001FBC0 /* reggaegood.png */,
+				5AE30616149D64740001FBC0 /* reggaeintro.png */,
+				5AE30617149D64740001FBC0 /* rockbad.png */,
+				5AE30618149D64740001FBC0 /* rockgood.png */,
+				5AE30619149D64740001FBC0 /* rockintro.png */,
+				5AE3060B149D45B40001FBC0 /* uri1.png */,
+			);
+			name = messages;
+			sourceTree = "<group>";
+		};
+		88E105AC149B02A700181644 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5A04E193149EAF2800C2DCC7 /* logobmp.png */,
+				5A04E191149EA72400C2DCC7 /* uriwinbmp.png */,
+				5A04E188149E9A5100C2DCC7 /* hiphopwinbmp.png */,
+				5A04E189149E9A5100C2DCC7 /* jazzwinbmp.png */,
+				5A04E18A149E9A5100C2DCC7 /* reggaewinbmp.png */,
+				5A04E18B149E9A5100C2DCC7 /* rockwinbmp.png */,
+				5A4A0578149E7EE500737A0C /* quitbutton.png */,
+				5A4A0579149E7EE500737A0C /* tryagainbutton.png */,
+				5A4A0574149E790300737A0C /* urihomeless.png */,
+				5AE30628149D8A8D0001FBC0 /* mixernewbmp.png */,
+				5AE3060D149D64030001FBC0 /* messages */,
+				5AE30607149D306A0001FBC0 /* mixerborder.png */,
+				5AE30605149D2D860001FBC0 /* mixertemp.png */,
+				5AE30603149D1A280001FBC0 /* kennygamebmp.png */,
+				5AE305E4149D126D0001FBC0 /* dimebagbmp.png */,
+				5AE305E5149D126D0001FBC0 /* dimebaghappybmp.png */,
+				5AE305E6149D126D0001FBC0 /* dimebagpissedbmp.png */,
+				5AE305E7149D126D0001FBC0 /* kennygonebmp.png */,
+				5AE305E8149D126D0001FBC0 /* kennygtwobmp.png */,
+				5AE305E9149D126D0001FBC0 /* kingtubbybmp.png */,
+				5AE305EA149D126D0001FBC0 /* kingtubbyhappybmp.png */,
+				5AE305EB149D126D0001FBC0 /* kingtubbypissedbmp.png */,
+				5AE305EC149D126D0001FBC0 /* moneybmp.png */,
+				5AE305ED149D126D0001FBC0 /* pdiddybmp.png */,
+				5AE305EE149D126D0001FBC0 /* pdiddyhappybmp.png */,
+				5AE305EF149D126D0001FBC0 /* pdiddypissedbmp.png */,
+				5AE305F0149D126D0001FBC0 /* uribest.png */,
+				5AE305F1149D126D0001FBC0 /* urimedium.png */,
+				5AE305F2149D126D0001FBC0 /* uriworst.png */,
+				5ADA3BB8149AAEF20013F722 /* mixbutton.png */,
+				5ADA3BB2149A9CFF0013F722 /* uriMENU.png */,
+				5A86E7CE149866BD00C4E99E /* buttonone.png */,
+				5A86E7C414985B5D00C4E99E /* buttonfour.png */,
+				5A86E7C614985B5D00C4E99E /* buttonthree.png */,
+				5A86E7C714985B5D00C4E99E /* buttontwo.png */,
+				5A86E7C1149845CB00C4E99E /* mixerone.png */,
+				5AC1AF311496A4F000043BBA /* mixer.png */,
+				5AB1ACBD14969AD900B9D699 /* fader.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		88E105AE149B030200181644 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5AE30609149D3ECC0001FBC0 /* EuphemiaCASRegular.ttf */,
+				5ADA3BB6149AA9240013F722 /* Comic Sans MS Bold.ttf */,
+				5A85715A14910DBE003A0D71 /* Arial.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A67113E149087AA0034CA80 /* markDavid_endGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A67115D149087AA0034CA80 /* Build configuration list for PBXNativeTarget "markDavid_endGame" */;
+			buildPhases = (
+				5A67113B149087AA0034CA80 /* Sources */,
+				5A67113C149087AA0034CA80 /* Frameworks */,
+				5A67113D149087AA0034CA80 /* Resources */,
+				5A671160149089650034CA80 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = markDavid_endGame;
+			productName = markDavid_endGame;
+			productReference = 5A67113F149087AA0034CA80 /* Mix Hero.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A671136149087AA0034CA80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = markmakingmusic;
+			};
+			buildConfigurationList = 5A671139149087AA0034CA80 /* Build configuration list for PBXProject "markDavid_endGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A671134149087AA0034CA80;
+			productRefGroup = 5A671140149087AA0034CA80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A67113E149087AA0034CA80 /* markDavid_endGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A67113D149087AA0034CA80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC1AF381496C5C200043BBA /* fader.png in Resources */,
+				5AC1AF371496C5BE00043BBA /* mixer.png in Resources */,
+				5A85715B14910DBE003A0D71 /* Arial.ttf in Resources */,
+				5A86E7C2149845CB00C4E99E /* mixerone.png in Resources */,
+				5A86E7C814985B5D00C4E99E /* buttonfour.png in Resources */,
+				5A86E7CA14985B5D00C4E99E /* buttonthree.png in Resources */,
+				5A86E7CB14985B5D00C4E99E /* buttontwo.png in Resources */,
+				5A86E7CF149866BD00C4E99E /* buttonone.png in Resources */,
+				5ADA3BB3149A9CFF0013F722 /* uriMENU.png in Resources */,
+				5ADA3BB7149AA9240013F722 /* Comic Sans MS Bold.ttf in Resources */,
+				5ADA3BB9149AAEF20013F722 /* mixbutton.png in Resources */,
+				88E105C1149B06D800181644 /* hiphop1.wav in Resources */,
+				88E105C2149B06D800181644 /* hiphop2.wav in Resources */,
+				88E105C3149B06D800181644 /* hiphop3.wav in Resources */,
+				88E105C4149B06D800181644 /* hiphop4.wav in Resources */,
+				88E105C9149B06D800181644 /* reggae1.wav in Resources */,
+				88E105CA149B06D800181644 /* reggae2.wav in Resources */,
+				88E105CB149B06D800181644 /* reggae3.wav in Resources */,
+				88E105CC149B06D800181644 /* reggae4.wav in Resources */,
+				88E105CD149B06D800181644 /* rock1.wav in Resources */,
+				88E105CE149B06D800181644 /* rock2.wav in Resources */,
+				88E105CF149B06D800181644 /* rock3.wav in Resources */,
+				88E105D0149B06D800181644 /* rock4.wav in Resources */,
+				5AE305F3149D126D0001FBC0 /* dimebagbmp.png in Resources */,
+				5AE305F4149D126D0001FBC0 /* dimebaghappybmp.png in Resources */,
+				5AE305F5149D126D0001FBC0 /* dimebagpissedbmp.png in Resources */,
+				5AE305F6149D126D0001FBC0 /* kennygonebmp.png in Resources */,
+				5AE305F7149D126D0001FBC0 /* kennygtwobmp.png in Resources */,
+				5AE305F8149D126D0001FBC0 /* kingtubbybmp.png in Resources */,
+				5AE305F9149D126D0001FBC0 /* kingtubbyhappybmp.png in Resources */,
+				5AE305FA149D126D0001FBC0 /* kingtubbypissedbmp.png in Resources */,
+				5AE305FB149D126D0001FBC0 /* moneybmp.png in Resources */,
+				5AE305FC149D126D0001FBC0 /* pdiddybmp.png in Resources */,
+				5AE305FD149D126D0001FBC0 /* pdiddyhappybmp.png in Resources */,
+				5AE305FE149D126D0001FBC0 /* pdiddypissedbmp.png in Resources */,
+				5AE305FF149D126D0001FBC0 /* uribest.png in Resources */,
+				5AE30600149D126D0001FBC0 /* urimedium.png in Resources */,
+				5AE30601149D126D0001FBC0 /* uriworst.png in Resources */,
+				5AE30604149D1A280001FBC0 /* kennygamebmp.png in Resources */,
+				5AE30606149D2D860001FBC0 /* mixertemp.png in Resources */,
+				5AE30608149D306A0001FBC0 /* mixerborder.png in Resources */,
+				5AE3060A149D3ECC0001FBC0 /* EuphemiaCASRegular.ttf in Resources */,
+				5AE3060C149D45B50001FBC0 /* uri1.png in Resources */,
+				5AE3061A149D64740001FBC0 /* hiphopbad.png in Resources */,
+				5AE3061B149D64740001FBC0 /* hiphopgood.png in Resources */,
+				5AE3061C149D64740001FBC0 /* hiphopintro.png in Resources */,
+				5AE3061D149D64740001FBC0 /* jazzbad.png in Resources */,
+				5AE3061E149D64740001FBC0 /* jazzgood.png in Resources */,
+				5AE3061F149D64740001FBC0 /* jazzintro.png in Resources */,
+				5AE30620149D64740001FBC0 /* reggaebad.png in Resources */,
+				5AE30621149D64740001FBC0 /* reggaegood.png in Resources */,
+				5AE30622149D64740001FBC0 /* reggaeintro.png in Resources */,
+				5AE30623149D64740001FBC0 /* rockbad.png in Resources */,
+				5AE30624149D64740001FBC0 /* rockgood.png in Resources */,
+				5AE30625149D64740001FBC0 /* rockintro.png in Resources */,
+				5AE30627149D648C0001FBC0 /* urione.png in Resources */,
+				5AE30629149D8A8D0001FBC0 /* mixernewbmp.png in Resources */,
+				5A6F8F21149DA3AC006AEB6D /* uri3.png in Resources */,
+				5A4A0573149E736D00737A0C /* eviction2.png in Resources */,
+				5A4A0575149E790300737A0C /* urihomeless.png in Resources */,
+				5A4A0577149E7D6300737A0C /* uri2new.png in Resources */,
+				5A4A057A149E7EE500737A0C /* quitbutton.png in Resources */,
+				5A4A057B149E7EE500737A0C /* tryagainbutton.png in Resources */,
+				5A04E18C149E9A5100C2DCC7 /* hiphopwinbmp.png in Resources */,
+				5A04E18D149E9A5100C2DCC7 /* jazzwinbmp.png in Resources */,
+				5A04E18E149E9A5100C2DCC7 /* reggaewinbmp.png in Resources */,
+				5A04E18F149E9A5100C2DCC7 /* rockwinbmp.png in Resources */,
+				5A04E192149EA72400C2DCC7 /* uriwinbmp.png in Resources */,
+				5A04E194149EAF2800C2DCC7 /* logobmp.png in Resources */,
+				5A108229149FA21100859F72 /* jazzbass.wav in Resources */,
+				5A10822A149FA21100859F72 /* jazzdrums.wav in Resources */,
+				5A10822B149FA21100859F72 /* jazzflute.wav in Resources */,
+				5A10822C149FA21100859F72 /* jazzpiano.wav in Resources */,
+				889BD7F6149FD55C00A84D17 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A67113B149087AA0034CA80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AADF50F149AF66C009DD91C /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A67115B149087AA0034CA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5A67115C149087AA0034CA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5A67115E149087AA0034CA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/Allegro-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroMain-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroAcodec-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroAudio-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroColor-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroDialog-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroFont-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroImage-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroMemfile-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroPhysfs-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroPrimitives-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroTTF-5.0.framework/Versions/Current/Headers",
+				);
+				INFOPLIST_FILE = "markDavid_endGame/markDavid_endGame-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "Mix Hero";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A67115F149087AA0034CA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Library/Frameworks/Allegro-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroMain-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroAcodec-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroAudio-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroColor-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroDialog-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroFont-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroImage-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroMemfile-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroPhysfs-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroPrimitives-5.0.framework/Versions/Current/Headers",
+					"/Library/Frameworks/AllegroTTF-5.0.framework/Versions/Current/Headers",
+				);
+				INFOPLIST_FILE = "markDavid_endGame/markDavid_endGame-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "Mix Hero";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A671139149087AA0034CA80 /* Build configuration list for PBXProject "markDavid_endGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A67115B149087AA0034CA80 /* Debug */,
+				5A67115C149087AA0034CA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A67115D149087AA0034CA80 /* Build configuration list for PBXNativeTarget "markDavid_endGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A67115E149087AA0034CA80 /* Debug */,
+				5A67115F149087AA0034CA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A671136149087AA0034CA80 /* Project object */;
+}

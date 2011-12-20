@@ -1,0 +1,195 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww15640\viewh14520\viewkind1
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 TITLE: Mix Hero\
+\
+AUTHORS: David Forshee & Mark Anderson\
+\
+ABSTRACT:\
+\
+This is an audio-centric game where the player is a recording engineer attempting to appease a given client. The player must choose musical elements and mix those elements to construct a song that the client will like. The player is awarded a sum of cash based on how well the selected loops and mix appease the client's apparent taste. If the player cannot pay the bills at the end of the month, the game ends. If the player has enough money to pay the monthly bills, the player wins!\
+\
+WHAT:\
+\
+Platform Mac OS X.\
+\
+This game is implemented using the Allegro API for all elements. It is coded in C. The user input will be based on mouse events. \
+\
+HOW:\
+\
+main.c\
+\
+We had difficulty implementing various loading / timer events by using an external InitStartMenu(); function, so we placed everything within the main.c file.\
+void InitStartMenu();\
+\
+Most GUI elements are instantiated by way of typedef structs. For instance, A "fader" object has many properties that will be stored in its member variables. For example:\
+\
+typedef struct _fader \{\
+\
+	int x;\
+	int y;\
+	int height;\
+	int width;\
+	int vol;\
+	bool isMoved;\
+\
+	//this is a pointer to an allegro struct that creates a 2D 	//image\
+	ALLEGRO_BITMAP *faderbmp;\
+	\CocoaLigature0     \
+\CocoaLigature1 \} Fader;\
+\
+typedef struct _button \{\
+	\
+	int x;\
+	int y;\
+	int height;\
+	int width;\
+	bool isClicked;\
+\
+	ALLEGRO_BITMAP *button;\
+\
+\} Button;\
+\
+//declare a new faderOne struct of type Fader;\
+Fader faderOne;\
+\
+There are functions to init, and set each element on screen:\
+\
+//initializes each fader.\
+void InitFader (Fader *fader, ALLEGRO_BITMAP *faderbmp);\
+\pard\tx560\pardeftab560\pardirnatural
+\cf0 \CocoaLigature0 void InitMixer(Mixer *mixer, ALLEGRO_BITMAP *mixerbmp);\
+void InitButtons(Button *button, ALLEGRO_BITMAP *buttonbmp);\
+void InitMixButton(MixButton *mixbutton, ALLEGRO_BITMAP *mixbuttonbmp);\
+\CocoaLigature1 \
+//these functions set each GUI element on the screen in the \
+//correct place \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 void SetFaderOne (Fader *faderOne, Mixer *mixer);\
+\'85etc\'85\
+\pard\tx560\pardeftab560\pardirnatural
+\cf0 \CocoaLigature0 void SetMixer(Mixer *mixer);\
+\'85etc\'85\
+\
+//this will update the faders when a user drags them...\
+void UpdateFaderOne(Fader *faderOne, Mixer *mixer, ALLEGRO_EVENT *ev, ALLEGRO_BITMAP *faderbmp);\
+void UpdateFaderTwo(Fader *faderTwo, Mixer *mixer, ALLEGRO_EVENT *ev, ALLEGRO_BITMAP *faderbmp);\
+void UpdateFaderThree(Fader *faderThree, Mixer *mixer, ALLEGRO_EVENT *ev, ALLEGRO_BITMAP *faderbmp);\
+void UpdateFaderFour(Fader *faderFour, Mixer *mixer, ALLEGRO_EVENT *ev, ALLEGRO_BITMAP *faderbmp);\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \CocoaLigature1 \
+We will need to initialize various elements of the Allegro API:\
+\
+//Allegro variables that will need to be instantiated:\
+//Allegro display variable\
+ALLEGRO_DISPLAY *display = NULL;\
+//this is used to store event queues. It stores them as a FIFO \
+//buffer.\
+ALLEGRO_EVENT QUEUE *event_queue = NULL;\
+//Bitmaps will need to be created for each struct:\
+ALLEGRO_BITMAP *mixerbmp;\
+ALLEGRO_BITMAP *faderbmp;\
+ALLEGRO_BITMAP *buttonsbmp;\
+//and bitmaps needed for client images:\
+ALLEGRO_BITMAP *uribmp;\
+ALLEGRO_BITMAP *kennygbmp;\
+ALLEGRO_BITMAP *rapperbmp;\
+ALLEGRO_BITMAP *kingtubbybmp;\
+\
+We will need to install the image add-on, which allows us to display bitmap images:\
+\
+al_init_image_addon();\
+\
+Next, we will initialize the mouse input by calling:\
+\
+al_install_mouse();\
+\
+Next, we initialize the font add-on and ttf add-on which will allow us to display text using fonts in which we place in our project folder. Allegro doesn't have default fonts so those will all be chosen by us. \
+\
+al_init_font_addon();\
+al_init_ttf_addon();\
+\
+Audio:\
+//init audio\
+al_install_audio\
+//to read in different audio codecs in Allegro:\
+al_init_acodec_addon();\
+//these are actually channels of audio\'85automatically creates a voice with an attached mixer. We will need 16 channels of audio playing at the same time for synchronous capabilities.\
+al_reserve_samples(int n);\
+\
+//this will actually load the sample into memory \
+sample = al_load_sample("ogg.ogg");\
+\
+//this will create the instance for the sample\
+al_create_sample_instance(sample);\
+\
+//configures the playback type\
+al_set_sample_instance_playmode();\
+\
+//connects the audio to a default mixer:\
+al_attach_sample_instance_to_mixer();\
+//this creates a new timer that will update the drawn elements 1/60 of a second\
+timer = al_create_timer(1.0 / FPS);\
+\
+We now need to register event queues for both mouse events and display events (for use of backbuffer).\
+\
+al_register_event_source(event_queue, al_get_mouse_event_source());\
+al_register_event_source(event_queue), al_get_display_event_source(display);\
+al_register_event_source(event_queue), al_get_timer_event_source(timer);\
+When sliders and buttons are pressed, they have member flags and volume levels that are accessed. These member values will change volume levels and possibly mute/play for each track that is playing.\
+\
+We need to start our hardware accelerated timer:\
+\
+al_start_timer(timer);\
+\
+Each game state is triggered based on mouse events. For instance, if a specific button is pressed or if the 'Mix' button is pressed which ends the round, the corresponding flag will be switched thus ending the current while loop. The following boolean variables are present:\
+\
+bool done;\
+bool isStartMenu;\
+bool isAboutScreen;\
+bool isRoundOver;\
+bool isEndOfMonth;\
+\
+//and booleans needed to calculate scores based on which round it was:\
+bool isKennyG;\
+bool isDimebagDarrell;\
+bool isPDiddy;\
+bool isKingTubby;\
+\
+At the beginning of every while loop, an event queue is created, which listens for events such as a user closing the window, a mouse event (either mouse axes movement or mouse clicks), or a timer event, which occurs 1 /60 of a second. When this occurs, the redraw flag is set to true and all graphical elements on the screen are redrawn to the backbuffer and then flipped to the front by way of al_flip_display();\
+\
+At the end of our program, we stop all the samples and then free all the memory we had created for bitmaps, samples, display, timer, events, and fonts.\
+\
+Folders within Xcode:\
+\
+/markDavid_endGame\
+	-main.c\
+	-mainStuff.h\
+	\
+/Audio\
+	-16 audio loops\
+\
+/GUI\
+	-faders.png\
+	-buttons.png\
+	-mixer.png\
+	-mixbutton.png\
+	-cash.png\
+	\'85etc\'85\
+/FONTS\
+	-arial.ttf\
+	-courier.ttf\
+	\'85etc\'85\
+\
+/SPRITES\
+	-Uri.png (many instances)\
+	-KennyG.png (many instances)\
+	-Rapper.png (many instances)\
+	-KingTubby.png (many instances)\
+\
+	\
+}
