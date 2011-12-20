@@ -1,0 +1,47 @@
+When adding the Allegro Frameworks, for some reason the "AllegroMain" framework doesn't show up in the available
+frameworks. 
+
+Follow the instructions here until you get to the Add Frameworks section:
+
+http://wiki.allegro.cc/index.php?title=OSX,_Xcode_4,_Framework
+
+THEN:
+
+1. Add the available Allegro Frameworks.
+
+2. Add another framework and choose "Add Other"
+
+3. Navigate to: Developer -> SDKs -> MacOSX 10.x sdk -> Library -> Frameworks ->
+- and choose AllegroMain-5.0.framework (don't navigate to headers, just choose that folder and hit open).
+
+ALSO:
+
+It is important to use the following arguments in the main function or else you will get the _al_mangled_main error:
+
+int main (int argc, char **argv) {
+
+}
+
+-I know this is the case with any .cpp not sure if I tested on a .c file though. Alright!
+
+FREEING MEMORY
+
+-anytime you allocate memory using one of the following:
+ALLEGRO_DISPLAY *display = NULL;
+ALLEGRO_EVENT_QUEUE *queue = NULL;
+ALLEGRO_TIMER *timer = NULL;
+ALLEGRO_BITMAP *image = NULL;
+ALLEGRO_FONT *font = NULL;
+
+display = al_create_display(WIDTH, HEIGHT);
+queue = al_create_event_queue();
+timer = al_create_timer(1.0 / FPS);
+image = al_create_bitmap(WIDTH, HEIGHT);
+font = al_load_font("arial.ttf", 18, 0);
+
+-you need to free the memory before exiting the game loop using the following:
+al_destroy_display(display);
+al_destroy_event_queue(queue);
+al_destroy_timer(timer);
+al_destroy_bitmap(image);
+al_destroy_font(font);
