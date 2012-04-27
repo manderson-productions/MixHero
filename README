@@ -1,10 +1,6 @@
 Enjoy.
 
-This was a first on many fronts; game design and collaboration on a project. The code is pretty messy and in retrospect 
-see lots of things we can improve upon in the future.
-
 For Future Reference when using Allegro 5.xxx:
-
 
 When adding the Allegro Frameworks, for some reason the "AllegroMain" framework doesn't show up in the available
 frameworks. 
